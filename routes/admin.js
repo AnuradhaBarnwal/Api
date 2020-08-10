@@ -1,13 +1,20 @@
+const path = require('path');
 const express = require('express');
+
+const rootdir = require('../util/path');
 
 const router = express.Router();
 
+//Get for add-book
+
 router.get('/add-book', (req, res, next) => {
     //console.log("book");
-    res.send("<form action='/admin/add-book' method='POST'><input type='text' name='title'><button type='submit'>Add Job</button></form>");
+    res.sendFile(path.join(rootdir, 'views', 'add-product.html'));
 });
 
-router.post('/admin/add-book', (req, res, next) => {
+//Post for add-book
+
+router.post('/add-book', (req, res, next) => {
     const obj = JSON.parse(JSON.stringify(req.body));    // req.body = [Object: null prototype] { title: 'product' }
     console.log(obj);
     res.redirect('/');

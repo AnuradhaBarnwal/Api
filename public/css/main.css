@@ -1,0 +1,89 @@
+body {
+    padding: 0%;
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+.main-head {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(140, 175, 175);
+}
+
+.main-head_nav {
+    display: flex;
+}
+
+.main-head_item {
+    list-style: none;
+    margin-top: 0.6em;
+    display: flex;
+}
+
+.list {
+    margin: 6px;
+}
+
+.list a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+.list a:hover,
+.list a:active,
+.list a.active {
+    color: blueviolet;
+}
+
+.book-form {
+    margin: 1em;
+    top: 2em;
+    margin-left: 4em;
+}
+
+.form label,
+.form input {
+    display: block;
+    margin: 1rem 0;
+}
+
+.form input {
+    border: 1px solid #7c4444;
+    font: inherit;
+    border-radius: 2px;
+
+}
+
+.form label {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: navy;
+}
+
+
+
+.title {
+    margin: 0;
+}
+
+button {
+    font: inherit;
+    padding: 5px 15px;
+    border: 1px solid rgb(53, 49, 49);
+    border-radius: 0.2rem;
+    color: rgb(58, 46, 230);
+    font-weight: 600;
+    background: rgb(120, 223, 223);
+    cursor: pointer;
+}
+
+button:hover,
+button:active {
+    background-color: rgb(252, 190, 250);
+    color: rgb(24, 87, 27);
+    border: 0;
+}
